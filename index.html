@@ -14,22 +14,23 @@
             background-color: #fff;
             color: #333;
             transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
         }
 
         header {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
-            text-align: center;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin: 0 15px;
         }
 
@@ -44,7 +45,6 @@
 
         /* Home Section */
         #home {
-            text-align: center;
             padding: 50px 0;
             background-color: #f4f4f4;
         }
@@ -61,22 +61,23 @@
         }
 
         .services h2 {
-            text-align: center;
             margin-bottom: 20px;
         }
 
         .service-list {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .service-item {
             background-color: #f4f4f4;
-            margin: 15px;
             padding: 20px;
             width: 300px;
             text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .service-item h3 {
@@ -97,19 +98,18 @@
         }
 
         .pricing h2 {
-            text-align: center;
             margin-bottom: 20px;
         }
 
         .pricing-table {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .pricing-card {
             background-color: #fff;
-            margin: 15px;
             padding: 20px;
             width: 300px;
             text-align: center;
@@ -146,7 +146,6 @@
             background-color: #333;
             color: #fff;
             padding: 10px 0;
-            text-align: center;
         }
     </style>
 </head>
