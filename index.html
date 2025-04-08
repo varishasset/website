@@ -205,3 +205,47 @@
   <script>
     // Dark Mode Toggle
     const toggleBtn = document.querySelector('.toggle-theme');
+    const body = document.body;
+
+    // Check localStorage for theme preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      
+      // Save the theme preference
+      if (body.classList.contains('dark')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+
+    // Simple Form Success Message (client-side)
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const thanks = document.getElementById('thanks');
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          thanks.style.display = 'block';
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      }).catch(error => {
+        alert("Submission failed. Please check your connection.");
+      });
+    }
+  </script>
+</body>
+</html>
