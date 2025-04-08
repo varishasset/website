@@ -62,24 +62,40 @@
             height: 600px;
             border: none;
         }
-        .pricing-table {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        .services-section {
+            margin-bottom: 40px;
         }
-        .pricing-card {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 30%;
-            text-align: center;
+        .service {
+            margin-bottom: 40px;
+        }
+        .service h3 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .service p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #555;
+        }
+        .service ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+        .service img {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
             border-radius: 8px;
         }
-        .pricing-card h3 {
-            margin-top: 0;
+        .benefits {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
         }
-        .pricing-card p {
-            font-size: 1.2rem;
+        .benefits h4 {
+            font-size: 1.5rem;
+            color: #333;
         }
     </style>
 </head>
@@ -105,12 +121,107 @@
 
         <section id="services" class="services">
             <h2>Our Services</h2>
-            <ul class="service-list">
-                <li><strong>IT Consulting:</strong> We provide expert guidance to help you build, maintain, and scale your IT infrastructure.</li>
-                <li><strong>Website Hosting:</strong> Reliable and secure hosting services for your website, ensuring optimal performance.</li>
-                <li><strong>Migration Services:</strong> Seamless migration of your systems, data, and applications to new platforms.</li>
-                <li><strong>Tech Solutions:</strong> From software development to security implementation, we offer custom tech solutions for your business.</li>
-            </ul>
+            <p>We offer a range of IT services designed to support your business, optimize your operations, and ensure growth in the digital age. Below is a detailed overview of the services we offer:</p>
+            
+            <!-- Service 1: IT Consulting -->
+            <div class="services-section">
+                <div class="service">
+                    <h3>IT Consulting</h3>
+                    <p>We offer expert IT consulting to help your business leverage technology to its fullest potential. Whether you're starting from scratch or looking to improve existing systems, we provide actionable insights to streamline your operations, reduce costs, and enhance your performance.</p>
+                    <ul>
+                        <li>System Architecture & Infrastructure Planning</li>
+                        <li>IT Strategy Development</li>
+                        <li>Cloud Solutions & Virtualization</li>
+                        <li>Security Audits & Risk Assessment</li>
+                        <li>Disaster Recovery Planning</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Scalable solutions to grow with your business</li>
+                            <li>Improved efficiency and performance</li>
+                            <li>Proactive management and support</li>
+                            <li>Future-proof your technology investments</li>
+                        </ul>
+                    </div>
+                    <img src="https://via.placeholder.com/500" alt="IT Consulting Example">
+                </div>
+            </div>
+
+            <!-- Service 2: Website Hosting -->
+            <div class="services-section">
+                <div class="service">
+                    <h3>Website Hosting</h3>
+                    <p>Our website hosting service offers reliable, fast, and secure hosting solutions to ensure your website runs smoothly. With state-of-the-art servers and high uptime guarantees, we provide the perfect environment for your website to thrive.</p>
+                    <ul>
+                        <li>Shared Hosting & Dedicated Servers</li>
+                        <li>Fast Load Times</li>
+                        <li>SSL Certificates for Enhanced Security</li>
+                        <li>Daily Backups and Data Recovery</li>
+                        <li>24/7 Customer Support</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>99.9% uptime guarantee</li>
+                            <li>Affordable plans for all business sizes</li>
+                            <li>Scalable hosting solutions to grow with your business</li>
+                            <li>Robust security and regular updates</li>
+                        </ul>
+                    </div>
+                    <img src="https://via.placeholder.com/500" alt="Website Hosting Example">
+                </div>
+            </div>
+
+            <!-- Service 3: Migration Services -->
+            <div class="services-section">
+                <div class="service">
+                    <h3>Migration Services</h3>
+                    <p>We make migration easy! Whether you’re moving to a new platform or upgrading your existing systems, we handle every step of the migration process to ensure a smooth transition with minimal disruption to your business.</p>
+                    <ul>
+                        <li>Data Migration (Email, Files, Databases)</li>
+                        <li>Cloud Migration</li>
+                        <li>Server Migration</li>
+                        <li>Application Migration</li>
+                        <li>Custom Migration Plans Tailored to Your Needs</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Seamless and secure data transfer</li>
+                            <li>Minimal downtime during the transition</li>
+                            <li>Expert migration support every step of the way</li>
+                            <li>Post-migration support to ensure smooth operations</li>
+                        </ul>
+                    </div>
+                    <img src="https://via.placeholder.com/500" alt="Migration Example">
+                </div>
+            </div>
+
+            <!-- Service 4: Tech Solutions -->
+            <div class="services-section">
+                <div class="service">
+                    <h3>Tech Solutions</h3>
+                    <p>Our tech solutions cover a wide range of needs, including software development, network management, security implementation, and more. We provide customized solutions that fit your unique business challenges.</p>
+                    <ul>
+                        <li>Software Development & Custom Apps</li>
+                        <li>Network Design & Management</li>
+                        <li>Cybersecurity Solutions</li>
+                        <li>Enterprise Solutions Integration</li>
+                        <li>Automation & Workflow Optimization</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Increase productivity and streamline operations</li>
+                            <li>Improve security and protect sensitive data</li>
+                            <li>Custom-tailored solutions to address your specific needs</li>
+                            <li>Boost employee collaboration and efficiency</li>
+                        </ul>
+                    </div>
+                    <img src="https://via.placeholder.com/500" alt="Tech Solutions Example">
+                </div>
+            </div>
         </section>
 
         <section id="pricing" class="pricing">
