@@ -41,8 +41,15 @@
             padding: 20px;
             background-color: #fff;
         }
-        .about, .services, .contact {
+        .about, .services, .pricing, .contact {
             margin-bottom: 40px;
+        }
+        .service-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .service-list li {
+            margin-bottom: 20px;
         }
         footer {
             background-color: #333;
@@ -54,6 +61,25 @@
             width: 100%;
             height: 600px;
             border: none;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .pricing-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .pricing-card h3 {
+            margin-top: 0;
+        }
+        .pricing-card p {
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -67,6 +93,7 @@
     <nav>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
+        <a href="#pricing">Pricing & Plans</a>
         <a href="#contact">Contact Us</a>
     </nav>
 
@@ -78,12 +105,53 @@
 
         <section id="services" class="services">
             <h2>Our Services</h2>
-            <ul>
+            <ul class="service-list">
                 <li><strong>IT Consulting:</strong> We provide expert guidance to help you build, maintain, and scale your IT infrastructure.</li>
                 <li><strong>Website Hosting:</strong> Reliable and secure hosting services for your website, ensuring optimal performance.</li>
                 <li><strong>Migration Services:</strong> Seamless migration of your systems, data, and applications to new platforms.</li>
                 <li><strong>Tech Solutions:</strong> From software development to security implementation, we offer custom tech solutions for your business.</li>
             </ul>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <h2>Pricing & Plans</h2>
+            <p>We offer flexible pricing plans to suit your business needs. Whether you're just starting or expanding, we have a plan for you!</p>
+
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3>Basic Plan</h3>
+                    <p>R500/month</p>
+                    <p>For small businesses looking for reliable hosting and basic support.</p>
+                    <ul>
+                        <li>1 Website Hosting</li>
+                        <li>Basic IT Support</li>
+                        <li>Email Support</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Standard Plan</h3>
+                    <p>R1000/month</p>
+                    <p>For growing businesses needing additional support and services.</p>
+                    <ul>
+                        <li>Up to 3 Websites Hosting</li>
+                        <li>IT Consulting</li>
+                        <li>Priority Email Support</li>
+                        <li>Website Backups</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium Plan</h3>
+                    <p>R2000/month</p>
+                    <p>For businesses looking for full-scale IT services and premium support.</p>
+                    <ul>
+                        <li>Unlimited Website Hosting</li>
+                        <li>Advanced IT Consulting</li>
+                        <li>24/7 Support</li>
+                        <li>Monthly Reports</li>
+                        <li>Security Monitoring</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact">
