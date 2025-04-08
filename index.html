@@ -11,8 +11,12 @@
       --card-bg: #2a2a2a;
       --primary: #ffffff;
       --nav: #333;
-      --header-bg: #34495e; /* Adjusted header background for better visibility */
-      --header-text: #ffffff; /* Ensure header text is white for contrast */
+      --header-bg: #34495e; /* Darker header for contrast */
+      --header-text: #ffffff;
+      --button-bg: #2980b9; /* Blue button background */
+      --button-text: #ffffff; /* White button text */
+      --footer-bg: #2c3e50; /* Footer background */
+      --footer-text: #ecf0f1; /* Footer text color */
     }
 
     body {
@@ -24,8 +28,8 @@
     }
 
     header {
-      background-color: var(--header-bg); /* Updated header background */
-      color: var(--header-text); /* Ensure the text is white */
+      background-color: var(--header-bg);
+      color: var(--header-text);
       padding: 2rem;
       text-align: center;
     }
@@ -89,17 +93,18 @@
     }
 
     form button {
-      background-color: var(--primary);
-      color: white;
+      background-color: var(--button-bg);
+      color: var(--button-text);
       padding: 10px 20px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-weight: bold;
     }
 
     footer {
-      background-color: var(--primary);
-      color: #fff;
+      background-color: var(--footer-bg);
+      color: var(--footer-text);
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
