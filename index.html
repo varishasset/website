@@ -3,276 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Virtual Asset - IT Consulting, Website Hosting, and More">
-    <meta name="keywords" content="IT Consulting, Website Hosting, South Africa, Tech Services, Migration, Digital Solutions">
-    <meta name="author" content="Your Virtual Asset">
-    <title>Your Virtual Asset - IT Services & Consulting</title>
+    <meta name="description" content="Your Virtual Asset - IT services and solutions, consulting, website hosting, migrations, and more in South Africa.">
+    <title>Your Virtual Asset - IT Services & Solutions</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fff;
             color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
+
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-        }
-        .about, .services, .pricing, .contact {
-            margin-bottom: 40px;
-        }
-        .service-list {
+
+        nav ul {
             list-style-type: none;
             padding: 0;
         }
-        .service-list li {
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+
+        /* Home Section */
+        #home {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        #home h1 {
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-item {
+            background-color: #f4f4f4;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .pricing-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pricing-card ul li {
+            margin: 5px 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .contact iframe {
+            border: none;
+            width: 100%;
+            height: 500px;
+        }
+
+        /* Footer */
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px;
+            padding: 10px 0;
             text-align: center;
-        }
-        .contact iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-        .services-section {
-            margin-bottom: 40px;
-        }
-        .service {
-            margin-bottom: 40px;
-        }
-        .service h3 {
-            font-size: 2rem;
-            color: #333;
-        }
-        .service p {
-            font-size: 1.2rem;
-            line-height: 1.5;
-            color: #555;
-        }
-        .service ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            font-size: 1rem;
-        }
-        .service img {
-            width: 100%;
-            max-width: 500px;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        .benefits {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .benefits h4 {
-            font-size: 1.5rem;
-            color: #333;
         }
     </style>
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <header>
-        <h1>Your Virtual Asset</h1>
-        <p>IT Consulting, Website Hosting, and More</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing & Plans</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing & Plans</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Your Virtual Asset</h1>
+        <p>Providing IT services and solutions for businesses in South Africa, including website hosting, consulting, and more.</p>
+    </section>
 
-    <div class="content">
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>Welcome to Your Virtual Asset! We specialize in providing high-quality IT consulting services, website hosting, and digital solutions tailored to the needs of businesses in South Africa. Whether you're looking to improve your infrastructure, migrate to a more robust platform, or need reliable hosting, we have you covered.</p>
-        </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>At Your Virtual Asset, we offer a wide range of IT services tailored to help your business grow. Whether you're starting a new project or optimizing your existing systems, we have a solution for you.</p>
 
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <p>We offer a range of IT services designed to support your business, optimize your operations, and ensure growth in the digital age. Below is a detailed overview of the services we offer:</p>
-            
-            <!-- Service 1: IT Consulting -->
-            <div class="services-section">
-                <div class="service">
-                    <h3>IT Consulting</h3>
-                    <p>We offer expert IT consulting to help your business leverage technology to its fullest potential. Whether you're starting from scratch or looking to improve existing systems, we provide actionable insights to streamline your operations, reduce costs, and enhance your performance.</p>
-                    <ul>
-                        <li>System Architecture & Infrastructure Planning</li>
-                        <li>IT Strategy Development</li>
-                        <li>Cloud Solutions & Virtualization</li>
-                        <li>Security Audits & Risk Assessment</li>
-                        <li>Disaster Recovery Planning</li>
-                    </ul>
-                    <div class="benefits">
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>Scalable solutions to grow with your business</li>
-                            <li>Improved efficiency and performance</li>
-                            <li>Proactive management and support</li>
-                            <li>Future-proof your technology investments</li>
-                        </ul>
-                    </div>
-                    <img src="https://via.placeholder.com/500" alt="IT Consulting Example">
-                </div>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>IT Consulting</h3>
+                <p>Expert advice on how to optimize your IT infrastructure and achieve your business goals. We provide strategic guidance for technology investments, system integrations, and more.</p>
             </div>
-
-            <!-- Service 2: Website Hosting -->
-            <div class="services-section">
-                <div class="service">
-                    <h3>Website Hosting</h3>
-                    <p>Our website hosting service offers reliable, fast, and secure hosting solutions to ensure your website runs smoothly. With state-of-the-art servers and high uptime guarantees, we provide the perfect environment for your website to thrive.</p>
-                    <ul>
-                        <li>Shared Hosting & Dedicated Servers</li>
-                        <li>Fast Load Times</li>
-                        <li>SSL Certificates for Enhanced Security</li>
-                        <li>Daily Backups and Data Recovery</li>
-                        <li>24/7 Customer Support</li>
-                    </ul>
-                    <div class="benefits">
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>99.9% uptime guarantee</li>
-                            <li>Affordable plans for all business sizes</li>
-                            <li>Scalable hosting solutions to grow with your business</li>
-                            <li>Robust security and regular updates</li>
-                        </ul>
-                    </div>
-                    <img src="https://via.placeholder.com/500" alt="Website Hosting Example">
-                </div>
+            <div class="service-item">
+                <h3>Website Hosting</h3>
+                <p>Reliable, secure, and fast website hosting for businesses of all sizes. We ensure your website stays online with minimal downtime and maximum performance.</p>
             </div>
-
-            <!-- Service 3: Migration Services -->
-            <div class="services-section">
-                <div class="service">
-                    <h3>Migration Services</h3>
-                    <p>We make migration easy! Whether you’re moving to a new platform or upgrading your existing systems, we handle every step of the migration process to ensure a smooth transition with minimal disruption to your business.</p>
-                    <ul>
-                        <li>Data Migration (Email, Files, Databases)</li>
-                        <li>Cloud Migration</li>
-                        <li>Server Migration</li>
-                        <li>Application Migration</li>
-                        <li>Custom Migration Plans Tailored to Your Needs</li>
-                    </ul>
-                    <div class="benefits">
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>Seamless and secure data transfer</li>
-                            <li>Minimal downtime during the transition</li>
-                            <li>Expert migration support every step of the way</li>
-                            <li>Post-migration support to ensure smooth operations</li>
-                        </ul>
-                    </div>
-                    <img src="https://via.placeholder.com/500" alt="Migration Example">
-                </div>
+            <div class="service-item">
+                <h3>Data Migrations</h3>
+                <p>Seamless data migration services that ensure your business’s data is moved safely and securely, whether you're transitioning to a new platform or moving to the cloud.</p>
             </div>
-
-            <!-- Service 4: Tech Solutions -->
-            <div class="services-section">
-                <div class="service">
-                    <h3>Tech Solutions</h3>
-                    <p>Our tech solutions cover a wide range of needs, including software development, network management, security implementation, and more. We provide customized solutions that fit your unique business challenges.</p>
-                    <ul>
-                        <li>Software Development & Custom Apps</li>
-                        <li>Network Design & Management</li>
-                        <li>Cybersecurity Solutions</li>
-                        <li>Enterprise Solutions Integration</li>
-                        <li>Automation & Workflow Optimization</li>
-                    </ul>
-                    <div class="benefits">
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>Increase productivity and streamline operations</li>
-                            <li>Improve security and protect sensitive data</li>
-                            <li>Custom-tailored solutions to address your specific needs</li>
-                            <li>Boost employee collaboration and efficiency</li>
-                        </ul>
-                    </div>
-                    <img src="https://via.placeholder.com/500" alt="Tech Solutions Example">
-                </div>
+            <div class="service-item">
+                <h3>System Optimization</h3>
+                <p>We help optimize your existing systems, improving performance and security. From server tuning to network optimization, we've got you covered.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="pricing" class="pricing">
-            <h2>Pricing & Plans</h2>
-            <p>We offer flexible pricing plans to suit your business needs. Whether you're just starting or expanding, we have a plan for you!</p>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <h2>Pricing & Plans</h2>
+        <p>We offer flexible pricing plans to suit your business needs. Whether you're just starting or expanding, we have a plan for you!</p>
 
-            <div class="pricing-table">
-                <div class="pricing-card">
-                    <h3>Basic Plan</h3>
-                    <p>R500/month</p>
-                    <p>For small businesses looking for reliable hosting and basic support.</p>
-                    <ul>
-                        <li>1 Website Hosting</li>
-                        <li>Basic IT Support</li>
-                        <li>Email Support</li>
-                    </ul>
-                </div>
-                <div class="pricing-card">
-                    <h3>Standard Plan</h3>
-                    <p>R1000/month</p>
-                    <p>For growing businesses needing additional support and services.</p>
-                    <ul>
-                        <li>Up to 3 Websites Hosting</li>
-                        <li>IT Consulting</li>
-                        <li>Priority Email Support</li>
-                        <li>Website Backups</li>
-                    </ul>
-                </div>
-                <div class="pricing-card">
-                    <h3>Premium Plan</h3>
-                    <p>R2000/month</p>
-                    <p>For businesses looking for full-scale IT services and premium support.</p>
-                    <ul>
-                        <li>Unlimited Website Hosting</li>
-                        <li>Advanced IT Consulting</li>
-                        <li>24/7 Support</li>
-                        <li>Monthly Reports</li>
-                        <li>Security Monitoring</li>
-                    </ul>
-                </div>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p>R500/month</p>
+                <p>For small businesses looking for reliable hosting and basic support.</p>
+                <ul>
+                    <li>1 Website Hosting</li>
+                    <li>Basic IT Support</li>
+                    <li>Email Support</li>
+                </ul>
             </div>
-        </section>
+            <div class="pricing-card">
+                <h3>Standard Plan</h3>
+                <p>R1000/month</p>
+                <p>For growing businesses needing additional support and services.</p>
+                <ul>
+                    <li>Up to 3 Websites Hosting</li>
+                    <li>IT Consulting</li>
+                    <li>Priority Email Support</li>
+                    <li>Website Backups</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <p>R2000/month</p>
+                <p>For businesses looking for full-scale IT services and premium support.</p>
+                <ul>
+                    <li>Unlimited Website Hosting</li>
+                    <li>Advanced IT Consulting</li>
+                    <li>Email & Phone Support</li>
+                    <li>Security Monitoring</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h3>One-Off Service</h3>
+                <p>R3000</p>
+                <p>A one-time service for businesses that need a specific IT solution, such as a website setup or a migration project.</p>
+                <ul>
+                    <li>Complete Website Setup</li>
+                    <li>One-Time IT Consulting</li>
+                    <li>Data Migration</li>
+                    <li>System Optimization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>If you would like to learn more about our services or have any questions, please feel free to reach out using the contact form below:</p>
-            <!-- Tally Form Embed Code -->
-            <iframe src="https://tally.so/embed/mYqDXJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" title="Contact Form"></iframe>
-        </section>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to get started or have any questions? Reach out to us below, and we'll get back to you as soon as possible!</p>
+        <iframe src="https://tally.so/embed/mYqDXJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="500" frameborder="0"></iframe>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Your Virtual Asset | All Rights Reserved</p>
     </footer>
